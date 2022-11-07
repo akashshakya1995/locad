@@ -1,8 +1,8 @@
 const { MongoClient } = require("mongodb")
+var db = ""
 const dbConnect = async function () {
     try {
         const client = new MongoClient("mongodb+srv://locad:<password>@cluster0.xpe48nu.mongodb.net/?retryWrites=true&w=majority")
-        const db = ""
         client.connect(function (err, data) {
             if (err) {
                 console.log("Db not established")
