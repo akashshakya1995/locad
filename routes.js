@@ -7,4 +7,4 @@ productRoutes.get("/getProduct", getProduct)
 productRoutes.delete("/delete/:productId", deleteProduct)
 
 
-module.exports = { productRoutes }
+module.exports = productRoutes 
